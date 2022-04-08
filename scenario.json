@@ -1,0 +1,7 @@
+{
+  "initial": {
+    "buttonAdd": "/html//a[@id='add']",
+    "searchInput": "/html//input[@id='searchbox']",
+    "searchButton": "/html//input[@id='searchsubmit']"
+  }
+}
