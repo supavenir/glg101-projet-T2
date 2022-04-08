@@ -1,14 +1,9 @@
 import fr.supavenir.computers.PageHome
-import fr.supavenir.framework.Scenario
 import org.junit.jupiter.api.AfterAll
-import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.TestInstance
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.chrome.ChromeDriver
-import java.io.BufferedReader
-import java.nio.file.Paths
 import kotlin.test.Test
+import kotlin.test.assertTrue
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class SampleTest {
@@ -18,7 +13,7 @@ class SampleTest {
 
     @BeforeAll
     fun beforeAll() {
-        System.setProperty("webdriver.chrome.driver","./chromedriver")
+        System.setProperty("webdriver.chrome.driver", "./chromedriver")
     }
 
     @AfterAll
@@ -27,19 +22,9 @@ class SampleTest {
     }
 
     @Test
-    fun test() {
-        val data = Scenario `is` "initial"
+    fun computerExist() {
+        robot `scenario is` "initial"
 
-        val buttonAdd = data `get` "buttonAdd"
-        val searchInput = data `get` "searchInput"
-        val searchButton = data `get` "searchButton"
-
-        //robot `click on` buttonAdd
-
-        robot `input in` searchInput text "Coucou, Thomas le BG"
-
-        robot `click on` searchButton
-
-        robot `take screenshot and save as` "test"
+        assertTrue(robot `check existence of the computer that bears the name of` "ACE")
     }
 }
