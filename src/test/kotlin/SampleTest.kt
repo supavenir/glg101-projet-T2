@@ -18,7 +18,7 @@ class SampleTest {
 
     @BeforeAll
     fun beforeAll() {
-        System.setProperty("webdriver.chrome.driver","/Users/thomasft/Sites/MAMP/CAI/GLG101/Projet/chromedriver")
+        System.setProperty("webdriver.chrome.driver","./chromedriver")
     }
 
     @AfterAll
