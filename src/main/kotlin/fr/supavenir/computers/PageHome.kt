@@ -1,7 +1,6 @@
 package fr.supavenir.computers
 
 import fr.supavenir.framework.PageAbstract
-import org.openqa.selenium.By
 
 class PageHome : PageAbstract("https://computer-database.gatling.io/computers") {
     infix fun `check existence of the computer that bears the name of`(name: String): Boolean {
