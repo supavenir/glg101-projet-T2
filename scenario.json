@@ -1,7 +1,46 @@
 {
-  "initial": {
-    "buttonAdd": "/html//a[@id='add']",
-    "searchInput": "/html//input[@id='searchbox']",
-    "searchButton": "/html//input[@id='searchsubmit']"
+  "initial_search_computer": {
+    "name": "ACE"
+  },
+  "bug_search_computer": {
+    "name": "ACE__fhbjrhfj"
+  },
+  "initial_order_asc_computer": {
+  },
+  "initial_order_desc_computer": {
+  },
+  "initial_go_next_page_computer": {
+  },
+  "bug_go_next_page_computer": {
+  },
+  "initial_go_previous_page_computer": {
+  },
+  "bug_go_previous_page_computer": {
+  },
+  "initial_add_computer": {
+    "name": "test_initial",
+    "dateIntroduced": "2020-12-21",
+    "dateDiscontinued": "2022-08-03",
+    "company": "Apple Inc."
+  },
+  "bug_add_computer": {
+    "name": "test_bug_initial",
+    "dateIntroduced": "2020-12-",
+    "dateDiscontinued": "2022-08-03",
+    "company": "Apple Inc."
+  },
+  "initial_edit_computer": {
+    "name": "test_initial",
+    "dateIntroduced": "2020-12-21",
+    "dateDiscontinued": "2022-08-03",
+    "company": "Apple Inc."
+  },
+  "bug_edit_computer": {
+    "name": "test_bug_initial",
+    "dateIntroduced": "2020-12-",
+    "dateDiscontinued": "2022-08-03",
+    "company": "Apple Inc."
+  },
+  "initial_delete_computer": {
   }
 }

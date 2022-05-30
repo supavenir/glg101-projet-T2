@@ -1,0 +1,16 @@
+{
+  "searchInput": "/html//input[@id='searchbox']",
+  "searchButton": "/html//input[@id='searchsubmit']",
+  "addButton": "/html//a[.='Add a new computer']",
+  "tableThComputerName": "//section[@id='main']/table//th/a[.='Computer name']",
+  "computerBanner": "//section[@id='main']/div[@class='alert-message warning']",
+  "nextPageButton": "//div[@id='pagination']/ul/li[@class='next']/a",
+  "previousPageButton": "//div[@id='pagination']/ul/li[@class='prev']/a",
+  "createComputerButton": "//section[@id='main']/form[@action='/computers']//input[@value='Create this computer']",
+  "nameInput": "/html//input[@id='name']",
+  "introducedInput": "/html//input[@id='introduced']",
+  "discontinuedInput": "/html//input[@id='discontinued']",
+  "companySelect": "/html//select[@id='company']",
+  "editComputerButton": "//section[@id='main']/form//input[@value='Save this computer']",
+  "deleteComputerButton": "//section[@id='main']//input[@value='Delete this computer']"
+}

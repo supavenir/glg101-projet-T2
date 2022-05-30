@@ -5,7 +5,8 @@ import com.google.gson.reflect.TypeToken
 import java.io.File
 
 data class Scenario(
-    val name: String
+    val name: String,
+    val isDataScenario: Boolean
 ) {
     private var data = hashMapOf<String, String>()
 
@@ -21,7 +22,7 @@ data class Scenario(
 
     companion object {
         infix fun `is`(name: String): Scenario {
-            return Scenario(name)
+            return Scenario(name, false)
         }
     }
 }
